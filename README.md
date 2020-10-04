@@ -13,9 +13,6 @@ It can be any of any length and can be any number of scripts, just add a folder 
 
 **Note : Don't add hello world programs, PRs will be closed immediately. Please add unique codes**
 
-## What's next?
-After you've added code, just come back to readme and add your name under contributor's list and you're done.
-
 ## Maintainer
 [Saurav Gupta](https://linkedin.com/in/sauravgpt)
 
