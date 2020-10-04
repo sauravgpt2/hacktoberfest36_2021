@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+
+<style>
+	body{
+			background-image:url("https://static1.bigstockphoto.com/1/2/2/large1500/221394793.jpg");
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+	}
+	form{
+			border-radius: 10px;
+			border:4px solid black;
+			height:480px;
+			width:300px;
+			background-color:gray;
+			background-image:linear-gradient(black,dimgray,white);
+	}
+	
+	input{
+		border-width: 6px;
+		border-radius:10px;
+		border-left-color:black;
+		border-top-color:black;
+		border-right-color:gray;
+		border-bottom-color:gray;
+		font-size: 23px;
+		margin:5px;
+		padding: 7px 7px;
+		height: 50px;
+		width: 50px;
+		}
+	input:hover{
+		color:red;
+		background-color:black;
+	}
+
+	.answer{
+		font-size: 28px;
+		width: 265px;
+		border: 2px solid black;
+		margin-top: 10px;
+		background-color: #FDFEFE;
+	}
+	.answer:hover{
+		background-color: white;
+		color:black;
+	}
+	.Clear{
+		font-size: 28px;
+		text-shadow:4px 4px 2px black; 
+		width: 265px;
+		margin-top: 8px;
+		background-image: linear-gradient(dimgray,black);
+		color:white;
+		border-width: 6px;
+		border-radius:10px;
+		border-left-color:black;
+		border-top-color:black;
+		border-right-color:gray;
+		border-bottom-color:gray;
+	}
+
+	.Clear:hover{
+		color:#3498DB;
+	}
+	
+</style>
+</head>
+<body>
+<center>
+<div>
+
+ <form>
+
+	<input class="answer" type="text" name="answer">
+	<br><br>
+	<input type="button" value="7" onclick="form.answer.value += '7' ">
+	<input type="button" value="8" onclick="form.answer.value += '8' ">
+	<input type="button" value="9" onclick="form.answer.value += '9' ">
+	<input type="button" value="/" onclick="form.answer.value += '/' ">
+	<br><br>
+	<input type="button" value="4" onclick="form.answer.value += '4' ">
+	<input type="button" value="5" onclick="form.answer.value += '5' ">
+	<input type="button" value="6" onclick="form.answer.value += '6' ">
+	<input type="button" value="x" onclick="form.answer.value += '*' ">
+	<br><br> 
+	<input type="button" value="1" onclick="form.answer.value += '1' ">
+	<input type="button" value="2" onclick="form.answer.value += '2' ">
+	<input type="button" value="3" onclick="form.answer.value += '3' ">
+	<input type="button" value="-" onclick="form.answer.value += '-' ">
+	<br><br>
+	<input type="button" value="0" onclick="form.answer.value += '0' ">
+	<input type="button" value="." onclick="form.answer.value += '.' ">
+	<input type="button" value="+" onclick="form.answer.value += '+' ">
+	<input type="button" value="=" onclick="form.answer.value = eval(form.answer.value)">
+	<br><br>
+	<input class="Clear" type="button" value="Clear all" onclick="form.answer.value = ' ' " >
+
+ </form>
+</div>
+</center>
+</body>
+</html>
