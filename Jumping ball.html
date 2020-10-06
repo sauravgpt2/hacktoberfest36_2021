@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Jumping ball
+	</title>
+<style>
+	body{
+		 background-image:linear-gradient(red,yellow,green);
+		 background-size:cover;
+	     background-attachment: fixed;
+		 background-repeat: no-repeat;
+      }
+.a{
+	width:100px;
+	height:100px;
+	border-radius:60%;
+  background-image:radial-gradient(gray,black);
+  top: 0px;
+  left: 0px;
+  position: fixed;
+
+  animation-name: planet;
+  animation-duration:8s;
+  animation-iteration-count:infinite;
+  animation-delay: 0s;
+  animation-direction:forward;
+  animation-timing-function:linear;
+  }
+@keyframes planet{
+	 0%{top: 0px;  left: 0px;   }
+	20%{top: 80%;  left: 200px; }
+	25%{top: 0px;  left: 300px; }
+	30%{top: 80%;  left: 400px; }
+	40%{top: 0px;  left: 550px; }
+	50%{top: 80%;  left: 700px; }
+	60%{top: 0px;  left: 850px; }
+	70%{top: 80%;  left: 1000px;}
+	80%{top: 0px;  left: 550px; }
+	90%{top: 80%;  left: 150px; }
+ 100%{top: 0px;  left: 0px;   }
+
+}
+
+</style>
+</head>
+<body>
+	<div class="a">
+	</div>
+</body>
+</html>
