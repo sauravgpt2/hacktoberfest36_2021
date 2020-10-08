@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CEST</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="tabs">
+  <div class="tab-header">
+    <div class="active">
+      <strong>Autumn-2019</strong>
+    </div>
+    <div>
+      <strong>Spring-2020</strong>
+    </div>
+    <div>
+      <strong>Crisis</strong>
+    </div>
+
+  </div>
+  <div class="tab-indicator"></div>
+  <div class="tab-content">
+
+    <div class="active" id="com">
+      <div class="container" align="center">
+        <p></p>
+        <button id="inbox1" type="button" class="btn btn-primary btn-md" name="button">Button-1</button>
+        <button id="inbox1" type="button" class="btn btn-warning btn-md" name="button">Button-2</button>
+        <button id="inbox1" type="button" class="btn btn-success btn-md" name="button">Button-3</button>
+        <button id="inbox1" type="button" class="btn btn-danger btn-md" name="button">Button-4</button>
+      </div>
+      <p></p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2 thumbnail"><div class="k1" id="im1"></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2 thumbnail"><div class="k1" id="im2"></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2 thumbnail"><div class="k1" id="im3"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="com">
+      <div class="container" align="center">
+        <p></p>
+        <button id="inbox2" type="button" class="btn btn-primary btn-md" name="button">Button-1</button>
+        <button id="inbox2" type="button" class="btn btn-warning btn-md" name="button">Button-2</button>
+        <button id="inbox2" type="button" class="btn btn-success btn-md" name="button">Button-3</button>
+        <button id="inbox2" type="button" class="btn btn-danger btn-md" name="button">Button-4</button>
+      </div>
+      <p></p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2 thumbnail"><div class="k2" id="im4"></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2 thumbnail"><div class="k2" id="im5"></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2 thumbnail"><div class="k2" id="im6"></div></div>
+        </div>
+      </div>
+    </div>
+    <div id="com">
+      <div class="container" align="center">
+        <p></p>
+        <button id="inbox3" type="button" class="btn btn-primary btn-md" name="button" >Button-1</button>
+        <button id="inbox3" type="button" class="btn btn-warning btn-md" name="button" >Button-2</button>
+        <button id="inbox3" type="button" class="btn btn-success btn-md" name="button" >Button-3</button>
+        <button id="inbox3" type="button" class="btn btn-danger btn-md" name="button" >Button-4</button>
+      </div>
+      <p></p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2 thumbnail"><div class="k3" id="im7"></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2 thumbnail"><div class="k3" id="im8"></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2 thumbnail"><div class="k3" id="im9"></div></div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+<style>
+ *{
+  box-sizing:border-box;
+}
+body {
+  background: #000033;
+  font-family:"Geneva";
+}
+
+.tabs {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:680px;
+  height:430px;
+  padding:20px 20px ;
+  background: #e6f2ff;
+  box-shadow:5px 5px 10px 5px #99ebff;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.tabs .tab-header {
+  float:left;
+  width:180px;
+  height:100%;
+  border-right:1px solid #ccc;
+  padding:50px 0px;
+}
+.tabs .tab-header > div {
+  height:65px;
+  line-height:60px;
+  font-size:25px;
+  font-weight:600;
+  color:#888;
+  cursor: cursor;
+  padding-left:10px;
+}
+.tabs .tab-header > div:hover{
+  color: #ff66ff;
+}
+.tabs .tab-header > div.active {
+  color: #00acee;
+}
+.tabs .tab-content {
+  position:relative;
+  height:100%;
+  overflow: hidden;
+}
+.tabs .tab-content > div{
+  position:absolute;
+  text-align:center;
+  padding:40px 20px;
+  top:-200%;
+  transition:all 500ms ease-in-out;
+}
+.tabs .tab-content > div.active {
+  top:0px;
+}
+.tabs .tab-indicator {
+  position:absolute;
+  width:5px;
+  height:70px;
+  background:#00acee ;
+  left:198px;
+  top:80px;
+  transition:all 500ms ease-in-out;
+}
+
+#inbox1,#inbox2,#inbox3{
+  margin-right: 5px;
+  margin-left: 6px;
+  border-radius: 15px;
+}
+
+#im1{
+  height:100px;
+  width:100px;
+  background-color: blue;
+  border-radius: 30px;
+}
+#im2{
+  height:100px;
+  width:100px;
+  background-color: red;
+  border-radius: 30px;
+}
+#im3{
+  height:100px;
+  width:100px;
+  background-color: green;
+  border-radius: 30px;
+}
+#im4{
+  height:100px;
+  width:100px;
+  background-color: pink;
+  border-radius: 30px;
+}
+#im5{
+  height:100px;
+  width:100px;
+  background-color: yellow;
+  border-radius: 30px;
+}
+#im6{
+  height:100px;
+  width:100px;
+  background-color: cyan;
+  border-radius: 30px;
+}
+#im7{
+  height:100px;
+  width:100px;
+  background-color: brown;
+  border-radius: 30px;
+}
+#im8{
+  height:100px;
+  width:100px;
+  background-color: purple;
+  border-radius: 30px;
+}
+#im9{
+  height:100px;
+  width:100px;
+  background-color: orange;
+  border-radius: 30px;
+}
+</style>
+
+<script>
+
+function _class(name){
+  return document.getElementsByClassName(name);
+}
+
+let tabPanes = _class("tab-header")[0].getElementsByTagName("div");
+
+for(let i=0;i<tabPanes.length;i++){
+  tabPanes[i].addEventListener("click",function(){
+    _class("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
+    tabPanes[i].classList.add("active");
+
+    _class("tab-indicator")[0].style.top = `calc(80px + ${i*50}px)`;
+
+    _class("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
+    _class("tab-content")[0].querySelectorAll("#com")[i].classList.add("active");
+
+  });
+}
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+function colchange(){
+  document.querySelector(".tab-indicator").style.background = getRandomColor();
+}
+setInterval("colchange()",400);
+
+var box1 = document.querySelectorAll(".k1");
+var box2 = document.querySelectorAll(".k2");
+var box3 = document.querySelectorAll(".k3");
+var bn1 = document.querySelectorAll("#inbox1");
+var bn2 = document.querySelectorAll("#inbox2");
+var bn3 = document.querySelectorAll("#inbox3");
+
+for(var i=0;i<bn1.length;i++)
+{
+  bn1[i].addEventListener('click',function(){
+    for(var j=0;j<box1.length;j++)
+    {
+      box1[j].style.background = getRandomColor();
+    }})
+}
+
+for(var i=0;i<bn2.length;i++)
+{
+  bn2[i].addEventListener('click',function(){
+    for(var j=0;j<box2.length;j++)
+    {
+      box2[j].style.background = getRandomColor();
+    }})
+}
+
+for(var i=0;i<bn3.length;i++)
+{
+  bn3[i].addEventListener('click',function(){
+    for(var j=0;j<box3.length;j++)
+    {
+      box3[j].style.background = getRandomColor();
+    }})
+}
+
+
+</script>
+  </body>
+</html>
