@@ -1,47 +1,29 @@
-#include <stdio.h>
-
-void swap(int *a,int *b)
+#include<iostream>
+using namespace std;
+int main ()
 {
-	int temp;
-	temp=*a;
-	*a=*b;
-	*b=temp;
+   int i, j,temp,pass=0;
+   int a[10] = {10,2,0,14,43,25,18,1,5,45};
+   cout <<"Input list ...\n";
+   for(i = 0; i<10; i++) {
+      cout <<a[i]<<"\t";
+   }
+cout<<endl;
+for(i = 0; i<10; i++) {
+   for(j = i+1; j<10; j++)
+   {
+      if(a[j] < a[i]) {
+         temp = a[i];
+         a[i] = a[j];
+         a[j] = temp;
+      }
+   }
+pass++;
 }
-
-void Bubble(int A[],int n)
-{
-	int i,j,flag=0;
-	for(i=0;i<n-1;i++)
-	{
-		flag=0;
-		for(j=0;j<n-i-1;j++)
-		{
-			if(A[j]>A[j+1])
-			{
-				swap(&A[j+1],&A[j]);
-				flag=1;
-			}
-		}
-			if(flag==0)
-			{
-				break ;
-			}
-	}
+cout <<"Sorted Element List ...\n";
+for(i = 0; i<10; i++) {
+   cout <<a[i]<<"\t";
 }
-
-int main()
-{
-    int A[]={12,3,2,34,86,98,23};
-    int n=7;
-    for(int i=0;i<n;i++)
-    {
-    	printf("%d\t",A[i]);
-	}
-	printf("\nAfter swapping\n");
-    Bubble(A,n);
-    for(int i=0;i<n;i++)
-    {
-    	printf("%d\t",A[i]);
-	}
-    return 0;
+cout<<"\nNumber of passes taken to sort the list:"<<pass<<endl;
+return 0;
 }
