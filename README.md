@@ -7,6 +7,14 @@
 A maintainer repo for hacktoberfest'20.
 
 ## What to do?
+
+# Seps
+1. Add star to this repo (compulsary)
+2. Fork this repo
+3. Add some good projects (will be reviewed from merging)
+4. Make a pull requests and comment the description of your project.
+5. Hola! 😎 You're done!
+
 Add any project, piece of code or script of your choice you wish to share in this repository.
 
 It can be any of any length and can be any number of scripts, just add a folder with your name or projects name.
