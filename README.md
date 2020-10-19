@@ -8,7 +8,7 @@ A maintainer repo for hacktoberfest'20.
 
 ## What to do?
 
-# Seps
+## Steps
 1. Add star to this repo (compulsary)
 2. Fork this repo
 3. Add some good projects (will be reviewed from merging)
@@ -21,8 +21,9 @@ It can be any of any length and can be any number of scripts, just add a folder 
 
 **Note : Don't add hello world programs, PRs will be closed immediately. Please add unique codes**
 
-## Maintainer
+# Maintainer
 [Saurav Gupta](https://linkedin.com/in/sauravgpt)
+I am a flutter developer.
 
 
 ## Final words
