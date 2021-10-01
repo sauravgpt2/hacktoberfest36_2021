@@ -4,7 +4,7 @@
 
 
 # Hactoberfest-Projects-2021
-A maintainer repo for hacktoberfest'20.
+A maintainer repo for hacktoberfest'21.
 
 ## What to do?
 
