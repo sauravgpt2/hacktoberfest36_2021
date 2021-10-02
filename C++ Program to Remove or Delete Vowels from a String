@@ -1,0 +1,36 @@
+/*  C++ Program to Remove or Delete Vowels from a String  */
+
+#include<iostream>
+#include<string.h>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{
+    char str[50],str1[50];
+        int len, i, j;
+        cout<<"\nEnter any string :: ";
+        gets(str);
+
+    strcpy(str1,str);
+
+        len=strlen(str);
+        for(i=0; i<len; i++)
+        {
+                if(str[i]=='a' || str[i]=='e' || str[i]=='i' ||
+                str[i]=='o' || str[i]=='u' || str[i]=='A' ||
+                str[i]=='E' || str[i]=='I' || str[i]=='O' ||
+                str[i]=='U')
+                {
+                        for(j=i; j<len; j++)
+                        {
+                                str[j]=str[j+1];
+                        }
+            len--;
+            i--;
+                }
+        }
+        cout<<"\nAfter Deleting the vowels, the string [ "<<str1<<" ] will be : "<<str<<"\n";
+
+        return 0;
+}
