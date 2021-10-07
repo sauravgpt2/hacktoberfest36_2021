@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game Container -->
+    <div class="game-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Rock Paper Scissors Fire Water-Baloon</h1>
+        </div>
+        <!-- Player Container -->
+        <div class="player-container" id="player">
+            <h2>You : <span id="player-score">0</span> <span class="choice" id="player-choice"></span></h2>
+            <div class="icons-container">
+                <i class="far fa-hand-rock" title="Rock" id="player-rock" onclick="select('rock')"></i>
+                <i class="far fa-hand-paper" title="Paper" id="player-paper" onclick="select('paper')"></i>
+                <i class="far fa-hand-scissors" title="Scissors" id="player-scissors" onclick="select('scissors')"></i>
+                <i class="far fas fa-fire-alt" title="Fire" id=player-fire onclick="select('fire')"></i>
+                <i class="far fas fa-tint" title="Water Baloon" id="player-water-baloon" onclick="select('waterBaloon')"></i>
+            </div>
+        </div>
+        <!-- Computer Container -->
+        <div class="player-container" id="computer">
+            <h2>Computer : <span id="computer-score">0</span> <span class="choice" id="computer-choice"></span></h2>
+            <div class="icons-container">
+                <i class="far fa-hand-rock" title="Rock" id="computer-rock"></i>
+                <i class="far fa-hand-paper" title="Paper" id="computer-paper"></i>
+                <i class="far fa-hand-scissors" title="Scissors" id="computer-scissors"></i>
+                <i class="far fas fa-fire-alt" title="Fire" id=computer-fire></i>
+                <i class="far fas fa-tint" title="Water Baloon" id="computer-water-baloon"></i>
+            </div>
+        </div>
+        <!-- Reset Icon -->
+        <i class="fas fa-redo reset-icon" title="Reset Game" onclick="resetAll()"></i>
+        <!-- Result Text -->
+        <div class="result-container">
+            <h3 class="result-text" id="result-text">Result</h3>
+        </div>
+    </div>
+    <!-- Script -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>

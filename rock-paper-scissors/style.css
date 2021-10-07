@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  user-select: none;
+  background-image: url(bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-container {
+  width: 550px;
+  height: auto;
+  background-color: rgb(40, 40, 40);
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(40, 40, 40, 0.5);
+}
+
+.header {
+  background: white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 4px;
+  transition: .5s;
+}
+
+h1 {
+  color: rgb(40, 40, 40);
+  font-size: 30px;
+}
+
+.player-container {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  transition: .3s;
+}
+
+.far,
+.fas {
+  font-size: 50px;
+  /* margin-right: 40px; */
+  User-select: none;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#player i:hover {
+  filter: brightness(115%);
+  transform: scale(1.2);
+}
+
+#player .fas,
+#player .far,
+#player .choice {
+  color: dodgerblue;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#computer .fas,
+#computer .far,
+#computer .choice {
+  color: rgb(255, 0, 76);
+  transition: .3s;
+}
+
+.selected {
+  color: white !important;
+  transform: scale(1.1);
+}
+
+.reset-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 50px;
+  transition: 1s;
+}
+
+.reset-icon:hover {
+  animation: animate 1.5s infinite ;
+}
+
+@keyframes animate {
+  0% {
+    color: grey;
+    transform: rotate(0deg);
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: grey;
+    transform: rotate(360deg);
+  }  
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.result-text {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 20px;
+  transition: .3s;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  body {
+  background-image: url(bg-mobile.jpg);
+  }
+  
+  .game-container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .player-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .reset-icon {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+}
