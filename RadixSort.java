@@ -4,7 +4,7 @@ import java.util.*;
 
 class RadixSort {
 
-	// A utility function to get maximum value in arr[]
+
 	static int getMax(int arr[], int n)
 	{
 		int mx = arr[0];
