@@ -14,8 +14,6 @@ class RadixSort {
 		return mx;
 	}
 
-	// A function to do counting sort of arr[] according to
-	// the digit represented by exp.
 	static void countSort(int arr[], int n, int exp)
 	{
 		int output[] = new int[n]; // output array
