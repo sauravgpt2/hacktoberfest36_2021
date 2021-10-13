@@ -1,0 +1,57 @@
+<%- include('partials/p1.ejs') %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+
+    <title>Blog app</title>
+
+    <style>
+        
+        
+
+    </style>
+</head>
+<body>
+        <div>
+
+
+        
+                <%for(let c of blog){%>
+                    <div id="blog">
+                   
+                    
+                    <div id="img-cont">
+                        <div>
+                            <img src="<%= c.image %>" alt="image">
+                        
+                        </div>
+                    </div>
+                    <h1><%= c.title %></h1>
+                    <h4 id="author">Author:  <%= c.author %></h2>
+                
+                    <p id="content"><%= c.content %></p>
+ 
+                    
+                    
+                        <button class="btn btn-dark"><a href="/blog/<%=c.id%>">More</a></button>
+
+                    </div>
+                  
+                <%}%>
+            </div>
+
+
+     
+
+
+
+
+
+
+</body>
+</html>

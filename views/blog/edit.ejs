@@ -1,0 +1,54 @@
+<%- include('partials/p1.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/edit.css" rel="stylesheet" type="text/css" />
+    <title>Blog app</title>
+  </head>
+  <body>
+    <form method="POST" action="/blog/<%=blog.id%>?_method=PATCH">
+      <div id="form-cont">
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            value="<%= blog.title %>"
+            name="title"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="image" class="form-label">Image URL</label>
+          <input
+            type="text"
+            class="form-control"
+            name="image"
+            value="<%= blog.image %>"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="author" class="form-label"> Author</label>
+          <input
+            type="text"
+            class="form-control"
+            name="author"
+            value="<%=
+          blog.author %>"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="content">Blog Content:</label>
+          <textarea rows="10" name="content" class="form-control">
+<%= blog.content %> </textarea
+          >
+        </div>
+        <input type="submit" class="btn btn-primary" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+
+.navbar{
+	width: 100%;
+	height: 65px;
+	display: flex;
+
+  background-color: #000;
+}
+
+
+.logo a{
+	font-size: 32px;
+	color: #aca4a7;
+  margin-left: 50px;
+}
+
+.navbar_items ul{
+	display: flex;
+  right: 20px;
+}
+
+.navbar_items ul li{
+	margin: 0 10px;
+  list-style: none;
+  margin-right: 40px;
+}
+
+.navbar_items ul li a{
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.navbar_items ul li a:hover{
+	
+	color: orange;
+	text-decoration: underline;
+}
+
