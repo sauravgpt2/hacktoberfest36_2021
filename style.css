@@ -1,0 +1,39 @@
+.defaultText {
+    user-select: none;
+    font-family: Courier, serif;
+    text-align: center;
+}
+
+button {
+    user-select: none;
+    background-color: rgb(231, 231, 231);
+    color: black;
+    size: 70px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: black;
+    outline: none;
+    position: absolute;
+    float: right;
+}
+
+button:hover {
+    background-color: #b8bfba
+}
+
+button:active {
+    background-color: #727278;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+canvas {
+    background-color: whitesmoke;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+canvas:hover {
+    background-color: #f0f0f0
+}
