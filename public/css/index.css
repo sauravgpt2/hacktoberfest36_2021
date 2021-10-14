@@ -1,0 +1,60 @@
+body{
+  background-color:rgba(0, 0, 0, 0.575);
+}
+
+#blog {
+  width: 80vw;
+
+  margin: 10px auto;
+  padding: 20px;
+  background-color: rgba(190, 190, 190, 0.904);
+}
+
+#img-cont {
+  margin: 2vh;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  width: fit-content;
+  background-color: rgb(48, 48, 48);
+  padding: 0px 20px;
+  padding-bottom: 5px;
+  font-size: 40px;
+  border-radius: 20px;
+  color: white;
+}
+
+img {
+  padding: 10px;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: orange;
+}
+button {
+  margin-top: 10px;
+}
+
+#author {
+  font-size: 25px;
+}
+#content {
+  white-space: pre-wrap;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  #blog {
+    width: 100%;
+  }
+  img {
+    width: 100vw;
+  }
+}

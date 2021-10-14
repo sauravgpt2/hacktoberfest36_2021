@@ -1,0 +1,21 @@
+a:link{
+  text-decoration: none;
+}
+body{
+  background-color:rgba(0, 0, 0, 0.575);
+}
+
+#form-cont {
+  width: 80vw;
+  margin: 2vh auto;
+  border: 2px solid black;
+  padding: 5%;
+  background-color: rgba(190, 190, 190, 0.904);
+}
+div {
+  color: black;
+}
+.form-control{
+  background-color: rgba(109, 109, 106, 0.459);
+
+}
