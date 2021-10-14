@@ -1,0 +1,36 @@
+// CPP program to find extra character in one
+// string
+#include <bits/stdc++.h>
+using namespace std;
+
+char findExtraCharcter(string strA, string strB)
+{
+	// store string values in map
+	unordered_map<char, int> m1;
+
+	// store second string in map with frequency
+	for (int i = 0; i < strB.length(); i++)
+		m1[strB[i]]++;
+
+	// store first string in map with frequency
+	for (int i = 0; i < strA.length(); i++)
+		m1[strA[i]]--;
+
+	for (auto h1 = m1.begin(); h1 != m1.end(); h1++) {
+
+		// if the frequency is 1 then this
+		// character is which is added extra
+		if (h1->second == 1)
+			return h1->first;
+	}
+}
+
+int main()
+{
+	// given string
+	string strA = "abcd";
+	string strB = "cbdad";
+
+	// find Extra Character
+	cout << findExtraCharcter(strA, strB);
+}
