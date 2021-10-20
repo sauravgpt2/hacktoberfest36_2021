@@ -1,0 +1,154 @@
+//index.html
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZJ gallery </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <nav>
+         <ul>
+         <li><a href=""><i class="fa fa-camera-retro" aria-hidden="true"></i>IMAGES</a></li>
+        </ul>
+        </nav>  
+      <section>
+          <h1>Buddy's Blog</h1>
+          <p>This is a developer's blog</p>
+      </section>
+
+
+
+    <div class="container">
+        <div style="background-color: lightcoral;">
+        <img src="https://images.unsplash.com/photo-1593642532781-03e79bf5bec2?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+        <i class="fa fa-camera" aria-hidden="true"></i>
+    </div>   
+        <div style="background-color: violet;">
+        <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+        <i class="fa fa-camera" aria-hidden="true"></i>
+    </div>
+        <div style="background-color: lightslategrey;">
+        <img src="https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8ZGV2ZWxvcGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+        <i class="fa fa-camera" aria-hidden="true"></i>
+    </div>
+        <div style="background-color: lightseagreen;">
+        <img src="https://images.unsplash.com/photo-1603468620905-8de7d86b781e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGRldmVsb3BlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+        <i class="fa fa-camera" aria-hidden="true"></i>
+    </div>
+        <div style="background-color: palegreen;">
+        <img src="https://images.unsplash.com/photo-1599837565318-67429bde7162?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fGRldmVsb3BlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+        <i class="fa fa-camera" aria-hidden="true"></i>
+    </div>
+        <div style="background-color: palegreen;">
+        <img src="https://images.unsplash.com/photo-1526406915894-7bcd65f60845?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fG1hY2Jvb2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+        <i class="fa fa-camera" aria-hidden="true"></i>
+    </div>
+
+         
+    </div>
+</body>
+</html>
+
+
+//=====================================================================================================================================================================================
+
+
+//style.css   :->
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 75vw;
+    height: 50vh;
+    margin: 50px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+}
+div{
+    border-radius: 12px;
+}
+
+
+
+nav{
+    display: flex;
+    background-color:brown;
+    height: 50px;
+    font-size: 2.2rem;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+li a{
+    margin-left: 70px;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+div img{
+    width: 100%;
+    height:100%;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.container div:hover img{
+    opacity: 0.35;
+    cursor: pointer;
+    filter: grayscale(100%);
+    border-radius: 12px;
+}
+
+i{
+    margin-right: 20px;
+}
+
+.container div{
+    position: relative;
+}
+div i{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    transform: scale(0);
+}
+
+.container div:hover i{
+    transform: scale(2);
+}
+
+section{
+    width: 75vw;
+    margin: 10px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f8f9fa;
+    height: 100px;
+}
+section h1{
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+
+section p{
+    font-size: 1.2rem;
+}
