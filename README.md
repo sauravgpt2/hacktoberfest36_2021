@@ -55,7 +55,7 @@ All the best for **Hacktoberfest** :)
 
 
 # Maintainer
-[Saurav Gupta](https://linkedin.com/in/sauravgpt)
-I am a flutter developer.
+[Saurav Gupta](https://linkedin.com/in/sauravgpt) <br>
+A Software Engineer💙
 
 ### Show some ❤ by starring the repository.
