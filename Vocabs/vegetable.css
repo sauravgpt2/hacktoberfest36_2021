@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+  }
+  .body{
+    width: 100%;
+    overflow: hidden;
+  }
+  
+
+  /*images*/
+  .all-img{
+    margin-top: 100px;
+    display:inline-block;
+    margin-left: 380px;
+    margin-right: 180px;
+  }
+
+   .images-content{
+    display:inline-block;
+    margin: 0 30px;
+    text-align: center;
+    cursor: pointer;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    margin-bottom: 30px;
+    
+  }
+
+  .image{
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+  }
+
+  .image:hover{
+    opacity: 0.8;
+    width:110px ;
+    height: 110px;
+  }
+
+  /*cursor*/
+  .images-content .tooltip{
+    position: absolute;
+    top:10px;
+    z-index: 1;
+    background: #fff;
+    color: black;
+    padding: 5px 8px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    margin-bottom: 0px;
+  }
+
+  .images-content:hover .tooltip{
+    top:-10px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  
+  /*responsive*/
+  @media screen and (max-width: 1200px) {
+   
+
+    /*images*/
+    .all-img{
+      margin-left: 170px;
+      margin-right: 170px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+   
+    /*images*/
+    .all-img{
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+}
+
+
+/*reponsive end*/
+
+

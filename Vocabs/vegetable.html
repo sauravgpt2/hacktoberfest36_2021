@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vegetable.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/90e489a80d.js" crossorigin="anonymous"></script>
+    <title>Vegatable</title>
+</head>
+<body>
+       <!-- nav bar -->
+  <div class="wrapper">
+    <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+            <img src="../images/logo8new.png" class="nav-img" alt="logo">
+            <div class="logo"><a href="#">Learning Bee</a></div>
+            <ul class="links">
+                <li  ><a  class="active" href="../index.html">Home</a></li>
+                <li >
+                    <a href="#" class="desktop-link">Skills</a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Skills</label>
+                    <ul>
+                        <li><a href="writing-page.html">Writing</a></li>
+                        <li><a href="speaking.html">Speaking</a></li>
+                        <li><a href="listening.html">Listening</a></li>
+                        <li><a href="Vocabulary.html">Vocabulary</a></li>
+                        <li><a href="reading_page.html">Reading</a></li>
+
+                    </ul>
+                </li>
+                <li ><a  href="grammar.html">Grammar</a></li>
+                <li ><a  href="practice_page.html">Practices</a></li>
+                <li >
+                    <a  href="#" class="desktop-link">Fun activities</a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Fun activities</label>
+                    <ul>
+                        <li><a href="Scramble.html">Scramble</a></li>
+                        <li><a href="hangman.html">Hang Man</a></li>
+                    </ul>
+                    <li>
+                        <a href="#footer" class="desktop-link">Contact Us</a>
+                        <input type="checkbox" id="show-services">
+                    </li>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    </div>
+
+
+
+
+    <!--images-->
+    <div class="all-img">
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./beetroot.png" class="image" onmouseover="pronus(1)" alt="beetroot" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./cabbage.png" class="image" onmouseover="pronus(2)" alt="cabbage" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./Capsicums.png" class="image" onmouseover="pronus(3)" alt="Capsicums" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./carrot.png" class="image" onmouseover="pronus(4)" alt="carrot" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./cucumber.png" class="image" onmouseover="pronus(5)" alt="Cucumber" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./eggplant.png" class="image" onmouseover="pronus(6)" alt="Eggplant" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./garlic.png" class="image" onmouseover="pronus(7)" alt="Garlic " id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./ginger.png" class="image" onmouseover="pronus(8)" alt="Ginger" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./mushroom.png" class="image" onmouseover="pronus(9)" alt="Mushrooms" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./pumpkin.png" class="image" onmouseover="pronus(10)" alt="Pumpkins" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./onion.png" class="image" onmouseover="pronus(11)" alt="Onion" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./soy.png" class="image" onmouseover="pronus(12)" alt="soy beans" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./broccoli.png" class="image" onmouseover="pronus(13)" alt="broccoli" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./asparagus.png" class="image" onmouseover="pronus(14)" alt="Asparagus" id="icon">
+        </div>
+        <div class="images-content">
+            <div class="tooltip name" id="name"></div>
+            <img src="./corn.png" class="image" onmouseover="pronus(15)" alt="Corn" id="icon">
+        </div>
+
+
+
+    </div>
+
+
+     <audio autoplay  id="mysong" >
+         <source  src="#" type="audio/mp3" ></source>
+         </audio>
+
+
+
+      <!-- footer -->
+      <section class="footer" id="footer">
+        <div class="row">
+            <div class="col">
+                <img src="../images/Logo.jpeg" class="logo">
+                <p>
+                    Are you ready to have a lot of learning English ? With these special, FREE Grammar lessons, spoken english, listening, Writing,
+                    you will be able to practice and improve your listening comprehension.
+                </p>
+            </div>
+            <div class="col">
+                <h3>OFFICE<div class="underline"><span></span></div>
+                </h3>
+                <p>balangoda road</p>
+                <p>Pambahina</p>
+                <p>Belihul Oya</p>
+                <p class="email-id">Eng@gmail.com</p>
+                <h4>+947-0382382</h4>
+            </div>
+            <div class="col">
+                <h3>QUICK LINKS <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="../content pages/grammar.html">Grammar</a></li>
+                    <li><a href="../content pages/practice_page.html">Practices</a></li>
+                    <li><a href="../content pages/practice_page.html">Fun activities</a></li>
+                    <li><a href="#footer">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>NEWS <div class="underline"><span></span></div>
+                </h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Learning Bee Tutorials 2021 - All Rights Reserved</p>
+        </div>
+    </section>
+
+
+</body>
+<script src="./vegetable.js"></script>
+<script src="./audio.js"></script>
+</html>
