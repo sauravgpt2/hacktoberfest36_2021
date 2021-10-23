@@ -20,10 +20,10 @@
 ## How to do contributions 
 
 ### 1. Fork the Project
-Fork this repository and make changes in code as required. You can change it online or by cloning it in your device. Then Pust it on your Forked Repo for furteher Actions. Do not use special characters in the template above.
+Fork this repository and make changes in code as required. You can change it online or by cloning it in your device. Then push it on your Forked Repo for further Actions. Do not use special characters in the template above.
 
 ### 2. Write a Good Commit Message
-You have written some code in your branch, and are ready to commit. So, make sure to written good, clean commit messages. Let's review the anatomy of a commit message.
+You have written some code in your branch, and are ready to commit. So, make sure to write good, clean commit messages. Let's review the anatomy of a commit message.
 
 ```
 ---
@@ -35,10 +35,10 @@ tense is preferred for commits. That means "fix bug", not "fixes bug" or
 "fixed bug".
 
 - Use bullets if you need
-- Bullets are a good way to summarize a few things
+- Bullets are a good way to summarise a few things
 
 If you have too much info here, it might be a good candidate to break
-down into multiple commits. You can use emoji here too :sparkles:
+down into multiple commits. You can use emojis here too :sparkles:
 
 ---
 ```
