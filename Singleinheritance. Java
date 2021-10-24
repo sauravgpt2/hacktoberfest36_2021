@@ -1,0 +1,21 @@
+class A
+{
+public void methodA()
+{
+System.out.println("Base class method");
+}
+}
+
+class SingleInherit extends A
+{
+public void methodB()
+{
+System.out.println("Child class method");
+}
+public static void main(String args[])
+{
+SingleInherit obj = new SingleInherit();
+obj.methodA();
+obj.methodB();
+  }
+}
