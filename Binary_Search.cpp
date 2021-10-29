@@ -2,13 +2,14 @@
 
 #include <iostream>
 using namespace std;
+//driver code
 int main()
 {
      int n,i, num, first, last, middle;
      cout<< "Enter the number of elements in array:\n";
      cin>>n;
      int arr[n];
-    cout<<"Enter the Elements (in ascending order): \n";
+    cout<<"Enter the Elements (in ascending order):\n";
     for(i=0; i<n; i++)
         cin>>arr[i];
     cout<<"\nEnter Element to be Searched: ";
