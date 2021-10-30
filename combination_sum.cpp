@@ -12,6 +12,7 @@ public:
         }
     }
     vector<vector<int>> combinationSum(vector<int>& cd, int tg) {
+        ans.clear();
         vector<int> cur;
         allc(cd,cur,0,tg);
         return ans;
