@@ -1,7 +1,7 @@
 from tkinter import *
 import requests
 I = 0
-
+ke=0
 def get_quote():
     global I
     resonse = requests.get("https://type.fit/api/quotes")
